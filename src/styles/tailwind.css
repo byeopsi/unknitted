@@ -1,0 +1,64 @@
+/* scss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+a {
+  @apply no-underline;
+}
+
+body {
+  @apply h-screen w-screen bg-yellow-100;
+}
+
+#unknitted-app {
+  @apply h-full w-full flex justify-start items-start flex-col;
+}
+
+header {
+  @apply h-10 w-full flex justify-end p-1 pr-8 bg-white;
+}
+
+header ul {
+  @apply flex items-center gap-5;
+}
+
+#top {
+  @apply fixed h-[calc(100vh-2.5rem)] w-screen;
+}
+
+#top #title {
+  @apply w-full bg-slate-400 text-center;
+}
+
+#title h1 {
+  @apply text-xl text-white;
+}
+
+#title p {
+  @apply text-white;
+}
+
+#top #menu {
+  @apply w-1/5 h-full bg-slate-200 p-5;
+}
+
+#menu ul {
+  @apply bg-slate-50;
+}
+
+#main {
+  @apply w-full h-[calc((100vh-2.5rem)/2)] mt-[calc(100vh-2.5rem)];
+}
+
+#main #img-slide {
+  @apply overflow-hidden;
+}
+
+#img-slide div {
+  @apply flex w-[400%] animate-swipe;
+}
