@@ -6,16 +6,15 @@ module.exports = {
       /* 스와이프 애니메이션 */
       keyframes: {
         swipe: {
-          "0%, 25%": { transform: "translateX(0%)" },
-          "33%": { transform: "translateX(-100%)" },
-          "58%": { transform: "translateX(-100%)" },
-          "66%": { transform: "translateX(-200%)" },
-          "91%": { transform: "translateX(-200%)" },
-          "100%": { transform: "translateX(0%)" },
+          "0%, 20%": { transform: "translateX(0%)" }, // 1
+          "25%, 45%": { transform: "translateX(-100%)" }, // 2
+          "50%, 70%": { transform: "translateX(-200%)" }, // 3
+          "75%, 95%": { transform: "translateX(-300%)" }, // 4
+          "100%": { transform: "translateX(-400%)" }, // 1(복제)로 이동
         },
       },
       animation: {
-        swipe: "swipe 12s ease-in-out infinite",
+        swipe: "swipe 20s infinite",
       },
       /* 스와이프 애니메이션 끝 */
     },
